@@ -1,0 +1,8 @@
+name: FlyPlugin
+main: com.example.fly.FlyPlugin
+version: 1.0.0
+api-version: 1.21
+commands:
+  fly:
+    description: Toggle flight on or off.
+    usage: /<command>
