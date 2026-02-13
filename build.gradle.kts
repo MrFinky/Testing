@@ -27,14 +27,3 @@ repositories {
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
 }
-
-tasks.processResources {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE
-    from("src/main/resources") {
-        include("plugin.yml", "paper-plugin.yml")
-    }
-}
-
-tasks.jar {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-}
